@@ -1,0 +1,34 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+.clr {clear: both}
+
+#inspect {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+#unicode-input-wp {
+  float: left;
+  width: 60px;
+}
+#unicode-value-wp {  
+  float: left;
+  width: 230px;
+  margin-left:10px;
+}
+#pad-wp {float:right;margin-right:30px;}
+#unicode-value {float: left;}
+#toChar {float: left;margin-left:5px}
+#desc-wp {padding: 5px;}
+#exp {font-size:14px;}
+
+.type-wp {text-align: left;line-height: 30px; font-family:consolas, courier, monospace}
+.type-wp input {position:relative;top:2px;}
+
+h1 {text-align: center}
+button {line-height: 49px;margin:0;padding:3px;}
+input.value {width: 35px;height: 35px; font-size: 36px; padding: 10px;margin:0}
+#unicode-value {width: 130px;}
+code {background: #f3f3f3;padding:5px;}

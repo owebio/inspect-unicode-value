@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Inspect Unicode Value</title>  
+  <link rel="stylesheet" href="assets/style.css" type="text/css" media="all" />
+  <script src="assets/jquery-3.1.1.min.js"></script>
+  <script src="assets/page.js"></script>
+</head>
+<body>
+<h1> Inspect Unicode Value </h1>
+
+<div id="inspect">
+  <div id="unicode-input-wp">
+    <h3>Char</h3>
+    <input id="unicode-input" class="value" size="1">
+  </div>
+  <div id="unicode-value-wp">
+    <h3>Unicode Value</h3>
+    <div>
+      <input type="text" id="unicode-value" class="value"><button id="toChar">toChar</button>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="type-wp">
+    <input name="format" type="radio" value="number" checked>number
+    <input name="format" type="radio" value="hex">hex
+    <div id="pad-wp"><input type="checkbox" id="pad" value="true" disabled>pad</div>
+  </div>
+  <div class="type-wp">
+    <!--
+    <input name="type" type="radio" value="plain" checked>plain
+    <input name="type" type="radio" value="javascript">\u
+    <input name="type" type="radio" value="css">\
+    <input name="type" type="radio" value="web">&#...;
+    -->
+  </div>
+  <div id="desc-wp">
+    <div id="desc">
+      <p id="exp">
+        Using composition event to get only one letter for all languages.
+      </p>
+      <p>
+        <code>달</code> + <code>ㅣ</code> : 다리 (Last char is '리'.)
+      </p>
+      <p>
+        source : <a href="https://github.com/owebio/inspect-unicode-value">github</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
